@@ -1,0 +1,19 @@
+{
+  "name": "prestashop/payeer",
+  "description": "PrestaShop module payeer",
+  "homepage": "https://payeer.com",
+  "license": "AFL - Academic Free License (AFL 3.0)",
+  "authors": [
+    {
+      "name": "Payeer",
+      "email": "info@payeer.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "type": "prestashop-module"
+}
