@@ -123,7 +123,7 @@ class PayeerStatusModuleFrontController extends ModuleFrontController
 					{
 						case 'success':
 							
-							if ($order->valid == 0)
+							if ($order->current_state != Configuration::get('PS_OS_PAYMENT'))
 							{
 								$orderStatusId = Configuration::get('PS_OS_PAYMENT');
 								$history->changeIdOrderState((int)($orderStatusId), $order);
@@ -136,7 +136,7 @@ class PayeerStatusModuleFrontController extends ModuleFrontController
 							$message .= $payeer->l(' - the payment status is not success', 'status') . "\n";
 							$err = true;
 							
-							if ($order->valid == 0)
+							if ($order->current_state != Configuration::get('PS_OS_ERROR'))
 							{
 								$orderStatusId = Configuration::get('PS_OS_ERROR');
 								$history->changeIdOrderState((int)($orderStatusId), $order);
