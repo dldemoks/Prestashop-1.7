@@ -1,8 +1,8 @@
-PrestaShop
+Prestashop 1.7
 ======
-Модуль оплаты Payeer
+Payment module Payeer
 
-Для установки модуля скачайте и распакуйте архив.
-Далее следуйте прилагаемой инструкции
+To install the module, download and unzip the archive.
+Then follow the attached instructions.
 
-Поддержка версии CMS PrestaShop 1.7
+Support for CMS Prestashop 1.7
